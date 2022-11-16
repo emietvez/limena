@@ -6,7 +6,7 @@ const links = document.querySelectorAll(".items")
 
 window.addEventListener("scroll", () => {
     if (window.scrollY == 0) {
-        navbar.classList.remove("md:bg-white");
+        navbar.classList.remove("md:bg-white", "shadow-lg");
         navbar.classList.add("md:bg-transparent");
         logoWhite.classList.add("md:flex");
         logoColor.classList.remove("md:flex");
@@ -19,9 +19,11 @@ window.addEventListener("scroll", () => {
 
     } else if (window.scrollY > 50) {
         navbar.classList.add("md:bg-white", "shadow-lg");
-        navbar.classList.remove("md:bg-transparent");
+        
+        navbar.classList.remove("md:bg-transparent", "shadow-none");
         logoWhite.classList.remove("md:flex")
         logoColor.classList.add("md:flex");
+    
 
         links.forEach((e) => {
             e.classList.add("md:text-black")

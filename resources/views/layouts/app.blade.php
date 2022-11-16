@@ -24,12 +24,12 @@
 
 <body>
     <div class="back-home bg-black flex items-center justify-center">
-        <h1 class="text-white text-4xl font-bold uppercase">Una aventura con alma de campo</h1>
+        <h1 class="text-white text-center text-4xl font-bold uppercase">Una aventura con alma de campo</h1>
     </div>
-    <nav id="navbar" class="bg-white md:bg-transparent px-2 sm:px-4 py-4 md:py-2 fixed w-full z-20 top-0 left-0 ">
+    <nav id="navbar" class="bg-white md:bg-transparent px-2 sm:px-4 py-4 md:py-2 fixed w-full z-20 top-0 left-0 shadow-none">
         <div class="container flex flex-wrap items-center justify-between md:justify-center mx-auto">
             <a href="#" class="flex items-center md:hidden">
-                <img src="{{ asset('img/logo.png') }}" class="h-10 mr-3 sm:h-9" alt="Limeña Logo">
+                <img src="{{ asset('img/brands/logo.png') }}" class="h-10 mr-3 sm:h-9" alt="Limeña Logo">
             </a>
             {{-- Hamburger menu --}}
             <div class="flex md:order-2">
@@ -69,10 +69,10 @@
                     </li>
                     <li>
                         <a href="#" id="logo-white" class="md:flex items-center hidden">
-                            <img src="{{ asset('img/brands/logo-white.png') }}" class="h-28 mx-10" alt="Flowbite Logo">
+                            <img src="{{ asset('img/brands/logo-white.png') }}" class="h-36 mx-10" alt="Limeña Logo">
                         </a>
                         <a href="#" id="logo-color" class="items-center hidden">
-                            <img src="{{ asset('img/brands/logo-color.png') }}" class="h-28 mx-10" alt="Flowbite Logo">
+                            <img src="{{ asset('img/brands/logo-color.png') }}" class="h-28 mx-10" alt="Limeña Logo">
                         </a>
                     </li>
                     <li>
@@ -99,16 +99,24 @@
     </nav>
     @yield('content')
     <footer class="bg-gray-600 flex items-center justify-center py-10 text-gray-300">
-        <div class="grid grid-cols-3">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-24">
             <div class="grid place-content-center grid-cols-1">
-                <img src="{{ asset('img/logo-blanco.png') }}" alt="" class="h-24 mx-auto mb-4">
-                <span class="text-center">Ruta 101 Km 17. Paredias, San Carlos <br> MENDOZA - ARGENTINA</span>
+                <img src="{{ asset('img/brands/logofooter.png') }}" alt="" class="h-28 mx-auto mb-4">
+                <span class="text-center">Ruta 101 Km 17. Pareditas, San Carlos <br> MENDOZA - ARGENTINA</span>
+                <a href="#" class="text-center text-lg text-semibold"><i class="fa-brands fa-whatsapp text-xl pr-2"></i>+542616155442</a>
             </div>
-            <div>
-
+            <div class="grid place-content-center grid-cols-1 py-8 px-4 border border-gray-200">
+                <form action="" class="grid gap-6">
+                    <h2 class="text-center text-lg uppercase">Contacto</h2>
+                    <input type="text" name="name" placeholder="Nombre / Name" id="">
+                    <input type="text" name="email" placeholder="E-mail" id="">
+                    <div class="flex items-center justify-center">
+                        <button type="submit" class="py-2 px-4 border rounded-full">Enviar</button>
+                    </div>
+                </form>
             </div>
-            <div>
-
+            <div class="flex items-center justify-center">
+                <img src="{{ asset('img/brands/trip-footer.png') }}" alt="" class="h-36">
             </div>
         </div>
     </footer>
