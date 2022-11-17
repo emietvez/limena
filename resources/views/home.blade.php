@@ -1,7 +1,11 @@
+ {{-- SLIDE --}}
+ <div class="back-home bg-black flex items-center justify-center">
+    <h1 class="text-white text-center text-4xl font-bold uppercase">Una aventura con alma de campo</h1>
+</div>
 @extends('layouts.app')
 
 @section('content')
-    <main class="container">
+    <main class="container bg-limena-600">
         <div class="flex items-center justify-center flex-col py-10">
             <img src="{{ asset('img/brands/flor.png') }}" class="items-center mx-5 h-40" alt="">
             <h1 class="text-center md:w-1/2 text-2xl md:text-4xl font-bold  text-limena-200">

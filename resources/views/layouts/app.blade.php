@@ -22,10 +22,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-limena-600">
+<body>
+    {{-- SOLAPA --}}
     <div class="fixed top-56 right-0 z-10 bg-white py-6 rounded-l-xl shadow-lg grid place-content-center">
         <button id="dropdownLeftButton" data-dropdown-toggle="dropdownLeft" data-dropdown-placement="left"
-            class="mb-3 md:mb-0 px-3 text-black focus:ring-0 focus:outline-none focus:ring-limena-200 font-medium text-sm  text-center inline-flex items-center "
+            class="md:mb-0 px-3 text-black focus:ring-0 focus:outline-none focus:ring-limena-200 font-medium text-sm  text-center inline-flex items-center "
             type="button">
             <i class="fa-solid fa-globe text-limena-200 hover:text-black"></i>
         </button>
@@ -55,9 +56,9 @@
         </ul>
     </div>
 
-    <div class="back-home bg-black flex items-center justify-center">
-        <h1 class="text-white text-center text-4xl font-bold uppercase">Una aventura con alma de campo</h1>
-    </div>
+   
+
+    {{-- NAVEGADOR --}}
     <nav id="navbar"
         class="bg-white md:bg-transparent px-2 sm:px-4 py-4 md:py-2 fixed w-full z-20 top-0 left-0 shadow-none">
         <div class="container flex flex-wrap items-center justify-between md:justify-center mx-auto">
@@ -83,7 +84,7 @@
                 <ul
                     class="flex flex-col items-center p-4 mt-4 bg-white md:bg-transparent md:p-0 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
                     <li>
-                        <a href="#"
+                        <a href="/"
                             class="items block py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150  md:p-0">
                             Inicio
                         </a>
@@ -101,15 +102,15 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" id="logo-white" class="md:flex items-center hidden">
+                        <a href="/" id="logo-white" class="md:flex items-center hidden">
                             <img src="{{ asset('img/brands/logo-white.png') }}" class="h-36 mx-10" alt="Limeña Logo">
                         </a>
-                        <a href="#" id="logo-color" class="items-center hidden">
+                        <a href="/" id="logo-color" class="items-center hidden">
                             <img src="{{ asset('img/brands/logo-color.png') }}" class="h-28 mx-10" alt="Limeña Logo">
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{route('cabalgatas')}}"
                             class="items block py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150  md:p-0">
                             Cabalgatas
                         </a>
@@ -130,7 +131,11 @@
             </div>
         </div>
     </nav>
+
+    {{-- PAGES --}}
     @yield('content')
+
+    {{-- FOOTER --}}
     <footer class="bg-gray-600 flex items-center justify-center py-10 text-gray-300">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-24">
             <div class="grid place-content-center grid-cols-1">

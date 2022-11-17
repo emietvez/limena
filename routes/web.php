@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FrontendController::class, 'index']);
 
 /* ESPAÑOL ROUTES */
-Route::get('/cabalgatas', [FrontendController::class, 'es']);
+Route::get('/cabalgatas', [FrontendController::class, 'es'])->name('cabalgatas');
 
 /* PORTUGUES ROUTES */
 Route::get('/pt', [FrontendController::class, 'pt']);

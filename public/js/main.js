@@ -15,8 +15,7 @@ window.addEventListener("scroll", () => {
             e.classList.remove("md:text-black")
             e.classList.add("md:text-gray-200")
         })
-      
-
+       
     } else if (window.scrollY > 50) {
         navbar.classList.add("md:bg-white", "shadow-lg");
         
@@ -31,15 +30,6 @@ window.addEventListener("scroll", () => {
         })
     }
 });
-
-
-
-
-
-
-
-
-
 
 
 

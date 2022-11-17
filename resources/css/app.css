@@ -11,30 +11,27 @@ body{
     @apply mx-auto max-w-[1650px] px-4 sm:px-6;
 }
 
-.container-section {
-    @apply md:mx-52 max-w-7xl px-4 sm:px-6 sm:mx-auto;
-}
+
 .back-home{
     width: 100%;
     height: 100vh;
-    background-image: url('../../public/img/2.jpeg');
+    background-image: url('../../public/img/inicio.jpg');
     background-size: cover;
     background-repeat: no-repeat;   
 }
-
-.splide__slide {
+.back-cabalgatas{
     width: 100%;
-    height: 480px;
+    height: 100vh;
+    background-image: url('../../public/img/cabalgatas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
 }
+
 .font-family-200{
     font-family: 'Roboto', sans-serif;
 }
 
-.splide__slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+
 @media only screen and (max-width: 767px) {
     .container{
         @apply mx-auto max-w-7xl px-4 sm:px-6;
