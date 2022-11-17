@@ -12,7 +12,7 @@ class FrontendController extends Controller
         return view('home');
     }
     public function es(){
-        return view('es.cabalgatas');
+        return view('cabalgatas');
     }
 
     //INGLES CONTROLLER
@@ -26,7 +26,7 @@ class FrontendController extends Controller
 
     // PORTUGUES CONTROLLER
     public function pt(){
-        return view('pt.home');
+        return view('pt.comeco');
     }
     public function passeios(){
         return view('pt.passeios');
