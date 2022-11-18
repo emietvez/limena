@@ -25,7 +25,7 @@
                  EN TAN SOLO UN PAR DE HORAS
              </h1>
          </div>
-         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:pt-8 md:pb-14 md:px-36">
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:pt-8 pb-14 md:px-36 text-limena-200">
 
              <div class="">
                  <p class="font-family-200 text-xl ">
@@ -56,11 +56,11 @@
          </div>
      </section>
 
-     <div class="back-cabalgatas bg-black flex items-center justify-center">
+     <div class="back-cabalgatas2 bg-black flex items-center justify-center">
          <h1 class="text-white text-center text-2xl md:text-5xl font-bold uppercase">Cabalgatas la limeña</h1>
      </div>
 
-     <section class="bg-limena-600">
+     <section class="bg-limena-600 text-limena-200">
          <div class="md:container flex items-center justify-center py-20">
              <p class="w-2/3 text-xl md:text-justify font-family-200">En La Limeña, podrás disfrutar de diferentes senderos y
                  actividades.
@@ -157,8 +157,8 @@
              <div class="grid grid-cols-1 bg-white rounded-xl gap-6 ">
                  <h2 class="text-2xl md:text-3xl px-10 md:px-20 pt-10 md:pt-6 pb-2 text-center ">RECOMENDACIONES PARA QUE DISFRUTES
                     AÚN MÁS DE TU EXPERIENCIA</h2>
-                 <div class="grid grid-cols-1 md:grid-cols-2 rounded-xl gap-6 ">
-                     <div class="text-justify px-10 pb-6 font-family-200 font-medium">
+                 <div class="grid grid-cols-1 md:grid-cols-2 rounded-xl md:gap-6 ">
+                     <div class="md:text-justify px-10 pb-6 font-family-200 font-medium text-lg">
                          <ul>
                              <li>• Pantalón largo y comodo</li>
                              <li>• Lentes (opcional)</li>
@@ -171,7 +171,7 @@
                          </ul>
 
                      </div>
-                     <div class="text-justify px-10 pb-10 md:pb-6 font-family-200 font-medium">
+                     <div class="text-justify px-10 pb-10 md:pb-6 font-family-200 font-medium text-lg">
                         <ul>
                             <li>• Sombrero</li>
                             <li>• Ganas de disfrutar de un día inolvidable</li>

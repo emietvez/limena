@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\SpanishController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,15 +15,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 /* PRINCIPAL */
-Route::get('/', [FrontendController::class, 'index']);
+Route::get('/', [SpanishController::class, 'index']);
+
 
 /* ESPAÑOL ROUTES */
-Route::get('/cabalgatas', [FrontendController::class, 'es'])->name('cabalgatas');
+Route::get('/tierras-blancas', [SpanishController::class, 'tierrasblancas'])->name('tierrasblancas');
+Route::get('/limena', [SpanishController::class, 'limena'])->name('limena');
+Route::get('/cabalgatas', [SpanishController::class, 'cabalgatas'])->name('cabalgatas');
+Route::get('/aventura', [SpanishController::class, 'aventura'])->name('aventura');
+Route::get('/gastronomia', [SpanishController::class, 'gastronomia'])->name('gastronomia');
+
+
 
 /* PORTUGUES ROUTES */
-Route::get('/pt', [FrontendController::class, 'pt']);
-Route::get('/pt/passeios',  [FrontendController::class, 'passeios']);
+// Route::get('/pt', [FrontendController::class, 'pt']);
+// Route::get('/pt/passeios',  [FrontendController::class, 'passeios']);
 
 /* ENGLISH ROUTES */
-Route::get('/en',  [FrontendController::class, 'en']);
-Route::get('/en/ride',  [FrontendController::class, 'enRide']);
+// Route::get('/en',  [FrontendController::class, 'en']);
+// Route::get('/en/ride',  [FrontendController::class, 'enRide']);

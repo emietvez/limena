@@ -19,10 +19,31 @@ body{
     background-size: cover;
     background-repeat: no-repeat;   
 }
+.back-limena{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../public/img/limena2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+.back-tierras{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../public/img/tierras.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
 .back-cabalgatas{
     width: 100%;
     height: 100vh;
     background-image: url('../../public/img/cabalgatas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+.back-cabalgatas2{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../public/img/cabalgatas2.jpg');
     background-size: cover;
     background-repeat: no-repeat;  
 }
@@ -40,6 +61,21 @@ body{
     background-size: cover;
     background-repeat: no-repeat;  
 }
+.back-aventura{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../public/img/aventura.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+.back-gastronomia{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../public/img/gastronomia.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
 .font-family-200{
     font-family: 'Roboto', sans-serif;
 }
@@ -55,6 +91,30 @@ body{
           rgba(0, 0, 0, 0.215)
         ),
         url('../../public/img/limena778px.jpg');
+        background-position: center;
+    }
+    .back-limena{
+        background-image: url('../../public/img/limena2.jpg');
+        background-position: center;
+    }
+    .back-tierras{
+        background-image: url('../../public/img/tierras768.jpg');
+        background-position: center;
+    }
+    .back-cabalgatas{
+        background-image: url('../../public/img/cabalgatas768.jpg');
+        background-position: center;
+    }
+    .back-cabalgatas2{
+        background-image: url('../../public/img/cabalgatas2768.jpg');
+        background-position: center;
+    }
+    .back-aventura{
+        background-image: url('../../public/img/aventura778.jpg');
+        background-position: center;
+    }
+    .back-gastronomia{
+        background-image: url('../../public/img/gastronomia768.jpg');
         background-position: center;
     }
   

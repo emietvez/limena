@@ -24,7 +24,7 @@
 
 <body>
     {{-- SOLAPA --}}
-    <div class="fixed top-56 right-0 z-10 bg-white py-6 rounded-l-xl shadow-lg grid place-content-center">
+    <div class="fixed top-56 right-0 z-40 bg-white py-6 rounded-l-xl shadow-lg grid place-content-center">
         <button id="dropdownLeftButton" data-dropdown-toggle="dropdownLeft" data-dropdown-placement="left"
             class="md:mb-0 px-3 text-black focus:ring-0 focus:outline-none focus:ring-limena-200 font-medium text-sm  text-center inline-flex items-center "
             type="button">
@@ -41,7 +41,7 @@
             class="font-semibold text-limena-200 fa-brands fa-whatsapp mt-3"></i>
     </a>
     </div>
-    <div id="dropdownLeft" class="hidden z-10 w-28 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+    <div id="dropdownLeft" class="hidden z-40 w-28 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
         <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLeftButton">
             <li>
                 <a href="#"
@@ -63,7 +63,7 @@
 
     {{-- NAVEGADOR --}}
     <nav id="navbar"
-        class="bg-white md:bg-transparent px-2 sm:px-4 py-4 md:py-2 fixed w-full z-20 top-0 left-0 shadow-none">
+        class="bg-white md:bg-transparent px-2 sm:px-4 py-4 md:py-2 fixed w-full z-40 top-0 left-0 shadow-none">
         <div class="container flex flex-wrap items-center justify-between md:justify-center mx-auto">
             <a href="#" class="flex items-center md:hidden">
                 <img src="{{ asset('img/brands/logo.png') }}" class="h-10 mr-3 sm:h-9" alt="Limeña Logo">
@@ -93,13 +93,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{ route('tierrasblancas') }}"
                             class="items flex py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150 md:p-0 md:dark:hover:text-white dark:text-gray-400">
                             Tierras Blancas
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{ route('limena') }}""
                             class="items flex py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150 md:p-0 md:dark:hover:text-white dark:text-gray-400">
                             La Limeña
                         </a>
@@ -119,13 +119,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{route('aventura')}}"
                             class="items block py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150  md:p-0">
                             Aventura
                         </a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="{{route('gastronomia')}}"
                             class="items flex py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150 md:p-0">
                             Gastronomía
                         </a>
