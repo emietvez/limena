@@ -37,6 +37,9 @@
         <a href="" class="flex items-center justify-center"><i
                 class="font-semibold text-limena-200 fa-brands fa-instagram mt-3"></i>
         </a>
+        <a href="https://wa.me/542616155442" class="flex items-center justify-center"><i
+            class="font-semibold text-limena-200 fa-brands fa-whatsapp mt-3"></i>
+    </a>
     </div>
     <div id="dropdownLeft" class="hidden z-10 w-28 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
         <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLeftButton">
@@ -106,7 +109,7 @@
                             <img src="{{ asset('img/brands/logo-white.png') }}" class="h-36 mx-10" alt="Limeña Logo">
                         </a>
                         <a href="/" id="logo-color" class="items-center hidden">
-                            <img src="{{ asset('img/brands/logo-color.png') }}" class="h-28 mx-10" alt="Limeña Logo">
+                            <img src="{{ asset('img/brands/flor.png') }}" class="h-10 mx-10" alt="Limeña Logo">
                         </a>
                     </li>
                     <li>
@@ -124,7 +127,7 @@
                     <li>
                         <a href="#"
                             class="items flex py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150 md:p-0">
-                            Contacto
+                            Gastronomía
                         </a>
                     </li>
                 </ul>
