@@ -15,6 +15,15 @@
             })
         </script>
     @endif
+    @if (session('successContact'))
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Formulario de contacto enviado correctamente',
+                confirmButtonColor: '#BAD1D0',
+            })
+        </script>
+    @endif
     <main class="container bg-limena-600">
         <div class="flex items-center justify-center flex-col py-10">
             <img src="{{ asset('img/brands/flor.png') }}" class="items-center mx-5 h-28 md:h-40" alt="">
@@ -37,7 +46,7 @@
                         Andes, al límite con Chile.
                     </p>
                     <div class="flex items-center justify-center">
-                        <a href=""
+                        <a href="{{route('tierrasblancas')}}"
                             class="w-full text-center tracking-[0.5rem] bg-limena-500 hover:bg-limena-400 duration-150 transition-all py-2 px-4 rounded-lg text-white">VER
                             MAS</a>
                     </div>
@@ -59,7 +68,7 @@
                         verdadera travesía campestre única e inigualable.
                     </p>
                     <div class="flex items-center justify-center">
-                        <a href=""
+                        <a href="{{route('limena')}}"
                             class="w-full text-center tracking-[0.5rem] bg-limena-500 hover:bg-limena-400 duration-150 transition-all py-2 px-4 rounded-lg text-white">VER
                             MAS</a>
                     </div>
@@ -86,7 +95,7 @@
                         caballo ideal para tu nivel.
                     </p>
                     <div class="flex items-center justify-center">
-                        <a href=""
+                        <a href="{{route('cabalgatas')}}"
                             class="w-full text-center tracking-[0.5rem] bg-limena-500 hover:bg-limena-400 duration-150 transition-all py-2 px-4 rounded-lg text-white">VER
                             MAS</a>
                     </div>
@@ -108,7 +117,7 @@
                         técnica baja te invitan a explorar el paisaje.
                     </p>
                     <div class="flex items-center justify-center">
-                        <a href=""
+                        <a href="{{route('aventura')}}"
                             class="w-full text-center tracking-[0.5rem] bg-limena-500 hover:bg-limena-400 duration-150 transition-all py-2 px-4 rounded-lg text-white">VER
                             MAS</a>
                     </div>

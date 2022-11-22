@@ -100,7 +100,7 @@
                          </a>
                      </div>
                      <div class="flex items-center justify-center pt-4">
-                         <a href=""
+                         <a href="https://www.tripadvisor.com.ar/Attraction_Review-g3382265-d25037050-Reviews-Finca_La_Limena_Horseback_Riding_Adventures-San_Carlos_Province_of_Mendoza_Cuyo.html "
                              class="w-full text-center font-bold uppercase tracking-[0.5rem] bg-cyan-700 hover:bg-limena-400 duration-150 transition-all py-3 px-4 rounded-lg text-white">
                              Reservar por tripadvisor
                          </a>
@@ -142,7 +142,7 @@
                          </a>
                      </div>
                      <div class="flex items-center justify-center pt-4">
-                         <a href=""
+                         <a href="https://www.tripadvisor.com.ar/Attraction_Review-g3382265-d25037050-Reviews-Finca_La_Limena_Horseback_Riding_Adventures-San_Carlos_Province_of_Mendoza_Cuyo.html"
                              class="w-full text-center font-bold uppercase tracking-[0.5rem] bg-cyan-700 hover:bg-limena-400 duration-150 transition-all py-3 px-4 rounded-lg text-white">
                              Reservar por tripadvisor
                          </a>
@@ -153,35 +153,35 @@
                  </div>
              </div>
          </div>
-         <div class="grid place-content-center container md:w-[80%] py-10 ">
-             <div class="grid grid-cols-1  rounded-xl gap-6 pt-10">
-                 <h2 class="text-2xl md:text-3xl px-10 md:px-20 pt-20 md:pt-6 pb-2 text-center "><i class="fa-solid fa-triangle-exclamation pr-4"></i>RECOMENDACIONES PARA QUE DISFRUTES
-                    AÚN MÁS DE TU EXPERIENCIA</h2>
-                 <div class="grid grid-cols-1 md:grid-cols-2 rounded-xl md:gap-6 p-10 ">
-                     <div class="md:text-start px-10 pb-6 font-family-200 font-medium text-lg">
-                         <ul>
-                             <li>• Pantalón largo y comodo</li>
-                             <li>• Lentes (opcional)</li>
-                             <li>• Pañuelo (opcional)</li>
-                             <li>• Calcetines largos o medias gruesas (evita rozaduras)</li>
-                             <li>• Calzado cómodo</li>
-                             <li>• Botas o botines</li>
-                             <li>• Bloqueador solar</li>
-                             <li>• Sombrero</li>
-                            <li>• Ganas de disfrutar de un día inolvidable</li>
+         <div class="grid place-content-center container md:w-[85%] py-10 ">
+                 <div class="grid grid-cols-1 md:grid-cols-2 rounded-xl gap-6 p-10 ">
+                     <div class="md:text-start px-10 py-10  font-medium text-lg bg-white  rounded-xl flex items-center flex-col justify-center">
+                        <img src="{{ asset('img/brands/hoja-verde.png')}}" alt="" class="h-20 mb-2">
+                        <h2 class="uppercase text-center text-xl sm:text-3xl font-bold text-limena-200">Recomendaciones</h2>
+                         <ul class="font-family-200 list-disc py-6 px-6">
+                             <li> Pantalón largo y comodo</li>
+                             <li> Lentes (opcional)</li>
+                             <li> Pañuelo (opcional)</li>
+                             <li> Calcetines largos o medias gruesas (evita rozaduras)</li>
+                             <li> Calzado cómodo</li>
+                             <li> Botas o botines</li>
+                             <li> Bloqueador solar</li>
+                             <li> Sombrero</li>
+                            <li> Ganas de disfrutar de un día inolvidable</li>
                          </ul>
 
                      </div>
-                     <div class="text-justify px-10 pb-10 md:pb-6 font-family-200 font-medium text-lg">
-                        <ul>
-                            
-                            <li class="font-semibold">Actividad no recomendable para:</li>
-                            <li>•  Personas con problemas de salud 
+                     <div class="md:text-start px-10 py-10  font-medium text-lg bg-white  rounded-xl flex items-center flex-col justify-start">
+                        <i class="fa-regular fa-circle-xmark text-7xl mb-4 text-red-600"></i>
+                        <h2 class="uppercase text-center text-xl sm:text-3xl font-bold text-limena-200">Actividad no recomendada</h2>
+                         <ul class="font-family-200 list-disc py-6 px-6">
+                            <li>Personas con problemas de salud 
                                 (espalda, cardíacos o cualquier tipo de 
                                 afección médica grave).</li>
-                            <li>• Mujeres embarazadas</li>
-                            
-                        </ul>
+                            <li> Mujeres embarazadas</li>
+                           
+                         </ul>
+
                      </div>
                  </div>
              </div>

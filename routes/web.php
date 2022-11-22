@@ -3,6 +3,7 @@
 use App\Http\Controllers\SpanishController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MessagesController;
+use App\Http\Controllers\MessageContact;
 use App\Mail\EnviarCorreo;
 use Illuminate\Support\Facades\Mail;
 
@@ -29,6 +30,8 @@ Route::get('/aventura', [SpanishController::class, 'aventura'])->name('aventura'
 Route::get('/gastronomia', [SpanishController::class, 'gastronomia'])->name('gastronomia');
 Route::get('/contacto', [SpanishController::class, 'contacto'])->name('contacto');
 Route::post('/contacto', [MessagesController::class, 'store'])->name('sendForm');
+Route::post('/send', [MessageContact::class, 'store'])->name('footerContact');
+
 
 // Route::post('enviar-correo', function()
 // {

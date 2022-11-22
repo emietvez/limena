@@ -24,4 +24,5 @@ class MessagesController extends Controller
 
          return redirect()->route('home')->with('success', "Formulario reserva enviado correctamente");
     }
+    
 }

@@ -51,7 +51,7 @@
             class="flex items-center justify-center">
             <img class="h-3  rounded-full mt-3" src="{{ asset('img/brands/trip-negro.png') }}" alt="">
         </a>
-        <a href="" class="flex items-center justify-center"><i
+        <a href="https://www.instagram.com/fincalalimena/" class="flex items-center justify-center"><i
                 class="font-semibold text-limena-200 fa-brands fa-instagram mt-3"></i>
         </a>
         <a href="https://wa.me/542616155442" class="flex items-center justify-center"><i
@@ -82,7 +82,7 @@
     <nav id="navbar"
         class="bg-white md:bg-transparent px-2 sm:px-4 py-4 md:py-2 fixed w-full z-40 top-0 left-0 shadow-none">
         <div class="container flex flex-wrap items-center justify-between md:justify-center mx-auto">
-            <a href="#" class="flex items-center md:hidden">
+            <a href="/" class="flex items-center md:hidden">
                 <img src="{{ asset('img/brands/logo.png') }}" class="h-10 mr-3 sm:h-9" alt="Limeña Logo">
             </a>
             {{-- Hamburger menu --}}
@@ -102,22 +102,22 @@
             <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1 bg-white md:bg-transparent"
                 id="navbar-sticky">
                 <ul
-                    class="flex flex-col items-center p-4 mt-4 bg-white md:bg-transparent md:p-0 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
-                    <li>
-                        <a href="/"
-                            class="items block py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150  md:p-0">
+                    class="flex flex-col items-center p-4 mt-4 bg-white md:bg-transparent md:p-0 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+                    <li >
+                        <a href="/" style="{{ (request()->routeIs('home')) ? 'border-bottom: 1px solid #fff;' : 'border-bottom: 1px solid transparent' }}"
+                            class="{{ (request()->routeIs('home')) ? 'font-bold' : 'font-medium' }} items block py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700  hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150  md:p-0">
                             Inicio
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('tierrasblancas') }}"
-                            class="items flex py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150 md:p-0 md:dark:hover:text-white dark:text-gray-400">
+                        <a href="{{ route('tierrasblancas') }}" style="{{ (request()->routeIs('tierrasblancas')) ? 'border-bottom: 1px solid #fff;' : 'border-bottom: 1px solid transparent' }}"
+                            class="{{ (request()->routeIs('tierrasblancas')) ? 'font-bold' : 'font-medium' }} items flex py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700  hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150 md:p-0 md:dark:hover:text-white dark:text-gray-400">
                             Tierras Blancas
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('limena') }}""
-                            class="items flex py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150 md:p-0 md:dark:hover:text-white dark:text-gray-400">
+                        <a href="{{ route('limena') }}" style="{{ (request()->routeIs('limena')) ? 'border-bottom: 1px solid #fff;' : 'border-bottom: 1px solid transparent' }}"
+                            class="{{ (request()->routeIs('limena')) ? 'font-bold' : 'font-medium' }} items flex py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150 md:p-0 md:dark:hover:text-white dark:text-gray-400">
                             La Limeña
                         </a>
                     </li>
@@ -131,20 +131,20 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('cabalgatas') }}"
-                            class="items block py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150  md:p-0">
+                        <a href="{{ route('cabalgatas') }}" style="{{ (request()->routeIs('cabalgatas')) ? 'border-bottom: 1px solid #fff;' : 'border-bottom: 1px solid transparent' }}"
+                            class="{{ (request()->routeIs('cabalgatas')) ? 'font-bold' : 'font-medium' }} items block py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150  md:p-0">
                             Cabalgatas
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('aventura') }}"
-                            class="items block py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150  md:p-0">
+                        <a href="{{ route('aventura') }}" style="{{ (request()->routeIs('aventura')) ? 'border-bottom: 1px solid #fff;' : 'border-bottom: 1px solid transparent' }}"
+                            class="{{ (request()->routeIs('aventura')) ? 'font-bold' : 'font-medium' }} items block py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150  md:p-0">
                             Aventura
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('gastronomia') }}"
-                            class="items flex py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150 md:p-0">
+                        <a href="{{ route('gastronomia') }}" style="{{ (request()->routeIs('gastronomia')) ? 'border-bottom: 1px solid #fff;' : 'border-bottom: 1px solid transparent' }}"
+                            class="{{ (request()->routeIs('gastronomia')) ? 'font-bold' : 'font-medium' }} items flex py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150 md:p-0">
                             Gastronomía
                         </a>
                     </li>
@@ -167,10 +167,13 @@
                 </a>
             </div>
             <div class="grid place-content-center grid-cols-1 py-8 px-4 border border-gray-200">
-                <form action="" class="grid gap-6">
+                <form action="{{route('footerContact')}}" class="grid gap-6" method="POST">
+                    @csrf
                     <h2 class="text-center text-lg uppercase">Contacto</h2>
-                    <input type="text" name="name" placeholder="Nombre / Name" id="">
-                    <input type="text" name="email" placeholder="E-mail" id="">
+                    <input type="text" name="nombre" placeholder="Nombre / Name" id="" class="text-black">
+                    {!! $errors->first('nombre', '<small class="text-red-800 pt-1">:message</small>') !!} 
+                    <input type="text" name="email" placeholder="E-mail" id=""  class="text-black">
+                    {!! $errors->first('email', '<small class="text-red-800 pt-1">:message</small>') !!}
                     <div class="flex items-center justify-center">
                         <button type="submit" class="py-2 px-4 border rounded-full">Enviar</button>
                     </div>

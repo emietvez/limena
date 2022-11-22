@@ -31,7 +31,7 @@
                      contacto con el entorno natural.
                  </p>
                  <div class="flex items-center justify-center pt-10">
-                     <a href=""
+                     <a href="{{route('contacto')}}"
                          class="w-full text-center font-bold uppercase tracking-[0.5rem] bg-limena-500 hover:bg-limena-400 duration-150 transition-all py-3 px-4 rounded-lg text-white">
                          Contáctanos
                      </a>
@@ -56,7 +56,7 @@
                      se esconde en la Estancia.
                  </p>
                  <div class="flex items-center justify-center pt-4">
-                     <a href=""
+                     <a href="{{route('contacto')}}"
                          class="w-full text-center font-bold uppercase tracking-[0.5rem] bg-limena-500 hover:bg-limena-400 duration-150 transition-all py-3 px-4 rounded-lg text-white">
                          Contáctanos
                      </a>
