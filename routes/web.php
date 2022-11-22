@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\SpanishController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MessagesController;
+use App\Mail\EnviarCorreo;
+use Illuminate\Support\Facades\Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 /* PRINCIPAL */
-Route::get('/', [SpanishController::class, 'index']);
+Route::get('/', [SpanishController::class, 'index'])->name('home');
 
 
 /* ESPAÑOL ROUTES */
@@ -24,7 +27,14 @@ Route::get('/limena', [SpanishController::class, 'limena'])->name('limena');
 Route::get('/cabalgatas', [SpanishController::class, 'cabalgatas'])->name('cabalgatas');
 Route::get('/aventura', [SpanishController::class, 'aventura'])->name('aventura');
 Route::get('/gastronomia', [SpanishController::class, 'gastronomia'])->name('gastronomia');
+Route::get('/contacto', [SpanishController::class, 'contacto'])->name('contacto');
+Route::post('/contacto', [MessagesController::class, 'store'])->name('sendForm');
 
+// Route::post('enviar-correo', function()
+// {
+//     Mail::to('info@fincalalimena.com')->send(new EnviarCorreo);
+//     return " Correo enviado ";
+// })->name('enviar-correo');
 
 
 /* PORTUGUES ROUTES */

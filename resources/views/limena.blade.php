@@ -4,7 +4,7 @@
 </div>
 @extends('layouts.app')
 
-@section('title', 'Gastronomía')
+@section('title', 'La Limeña')
 
 @section('content')
     <section class="container bg-limena-600 pb-20">
@@ -28,5 +28,5 @@
         </div>
         @include('partials.slide-limena')
     </section>
-    
+    @include('partials.anuncio')
 @endsection

@@ -61,8 +61,8 @@
      </div>
 
      <section class="bg-limena-600 text-limena-200">
-         <div class="md:container flex items-center justify-center py-20">
-             <p class="w-2/3 text-xl md:text-justify font-family-200">En La Limeña, podrás disfrutar de diferentes senderos y
+         <div class="flex items-center justify-center py-20 ">
+             <p class="text-xl md:text-justify font-family-200 w-2/3">En La Limeña, podrás disfrutar de diferentes senderos y
                  actividades.
                  Comenzaremos por conocer a los gauchos que acompañarán el recorrido.
                  Ellos serán los responsables de entregar el caballo indicado para cada
@@ -71,9 +71,9 @@
                  recuerdo. Nuestros guias expertos han diseñado especialmente dos tipos
                  de cabalgatas para optimizar tu experiencia.</p>
          </div>
-         <div class="flex items-center container md:w-2/3 py-10">
-             <div class="grid grid-cols-1 md:grid-cols-5 bg-white rounded-xl gap-6">
-                 <div class="col-span-3 md:text-justify p-10  ">
+         <div class="flex items-center container md:w-[80%] py-20">
+             <div class="grid grid-cols-1 md:grid-cols-3 bg-white rounded-xl gap-6">
+                 <div class="col-span-2 md:text-start p-20">
                      <h2 class="text-3xl pb-4">CABALGATA AL CORAZÓN DE LOS ANDES</h2>
                      <p class=" font-family-200 pb-3 text-sm">Esta excursión te llevará a lo más profundo de la majestuosa
                          cadena
@@ -94,7 +94,7 @@
                      <p class=" font-family-200 text-sm"> - Incluye zona de descanso y banquete completo con los mejores
                          varietales de vino durante todas las jornadas.</p>
                      <div class="flex items-center justify-center pt-4">
-                         <a href=""
+                         <a href="{{route('contacto')}}"
                              class="w-full text-center font-bold uppercase tracking-[0.5rem] bg-limena-500 hover:bg-limena-400 duration-150 transition-all py-3 px-4 rounded-lg text-white">
                              Reservar aquí
                          </a>
@@ -106,15 +106,15 @@
                          </a>
                      </div>
                  </div>
-                 <div class="card-back col-span-2 rounded-r-xl">
+                 <div class="card-back  rounded-r-xl">
 
                  </div>
              </div>
          </div>
-         <div class="flex items-center container md:w-2/3 py-10 ">
-             <div class="grid grid-cols-1 md:grid-cols-5 bg-white rounded-xl gap-6 ">
-                 <div class="col-span-3 md:text-justify p-10 ">
-                     <h2 class="text-3xl pb-4">CABALGATA AL CORAZÓN DE LOS ANDES</h2>
+         <div class="flex items-center container md:w-[80%] py-10 ">
+             <div class="grid grid-cols-1 md:grid-cols-3 bg-white rounded-xl gap-6 ">
+                 <div class="col-span-2 md:text-start p-20 ">
+                     <h2 class="text-3xl pb-4">CABALGATA AL PIE DE LOS ANDES - FULL DAY</h2>
                      <p class=" font-family-200 pb-3 text-sm">Una excursión a caballo por senderos únicos dentro de la
                          Estancia y
                          a los pies de los Andes. Un recorrido que podrás disfrutar a través
@@ -136,7 +136,7 @@
                          deliciosa media tarde campestre y criolla..</p>
 
                      <div class="flex items-center justify-center pt-4">
-                         <a href=""
+                         <a href="{{route('contacto')}}"
                              class="w-full text-center font-bold uppercase tracking-[0.5rem] bg-limena-500 hover:bg-limena-400 duration-150 transition-all py-3 px-4 rounded-lg text-white">
                              Reservar aquí
                          </a>
@@ -148,34 +148,34 @@
                          </a>
                      </div>
                  </div>
-                 <div class="card-back-two col-span-2 rounded-r-xl">
+                 <div class="card-back-two  rounded-r-xl">
 
                  </div>
              </div>
          </div>
-         <div class="grid place-content-center container md:w-2/3 py-10 ">
-             <div class="grid grid-cols-1 bg-white rounded-xl gap-6 ">
-                 <h2 class="text-2xl md:text-3xl px-10 md:px-20 pt-10 md:pt-6 pb-2 text-center ">RECOMENDACIONES PARA QUE DISFRUTES
+         <div class="grid place-content-center container md:w-[80%] py-10 ">
+             <div class="grid grid-cols-1  rounded-xl gap-6 pt-10">
+                 <h2 class="text-2xl md:text-3xl px-10 md:px-20 pt-20 md:pt-6 pb-2 text-center "><i class="fa-solid fa-triangle-exclamation pr-4"></i>RECOMENDACIONES PARA QUE DISFRUTES
                     AÚN MÁS DE TU EXPERIENCIA</h2>
-                 <div class="grid grid-cols-1 md:grid-cols-2 rounded-xl md:gap-6 ">
-                     <div class="md:text-justify px-10 pb-6 font-family-200 font-medium text-lg">
+                 <div class="grid grid-cols-1 md:grid-cols-2 rounded-xl md:gap-6 p-10 ">
+                     <div class="md:text-start px-10 pb-6 font-family-200 font-medium text-lg">
                          <ul>
                              <li>• Pantalón largo y comodo</li>
                              <li>• Lentes (opcional)</li>
                              <li>• Pañuelo (opcional)</li>
-                             <li>• Calcetines largos o medias gruesas
-                                 (evita rozaduras)</li>
+                             <li>• Calcetines largos o medias gruesas (evita rozaduras)</li>
                              <li>• Calzado cómodo</li>
                              <li>• Botas o botines</li>
                              <li>• Bloqueador solar</li>
+                             <li>• Sombrero</li>
+                            <li>• Ganas de disfrutar de un día inolvidable</li>
                          </ul>
 
                      </div>
                      <div class="text-justify px-10 pb-10 md:pb-6 font-family-200 font-medium text-lg">
                         <ul>
-                            <li>• Sombrero</li>
-                            <li>• Ganas de disfrutar de un día inolvidable</li>
-                            <li class="py-4 font-semibold">Actividad no recomendable para:</li>
+                            
+                            <li class="font-semibold">Actividad no recomendable para:</li>
                             <li>•  Personas con problemas de salud 
                                 (espalda, cardíacos o cualquier tipo de 
                                 afección médica grave).</li>

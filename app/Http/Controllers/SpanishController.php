@@ -25,4 +25,7 @@ class SpanishController extends Controller
     public function gastronomia(){
         return view('gastronomia');
     }
+    public function contacto(){
+        return view('contacto');
+    }
 }

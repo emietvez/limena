@@ -4,7 +4,7 @@
  </div>
  @extends('layouts.app')
 
- @section('title', 'Gastronomía')
+ @section('title', 'Tierras Blancas')
 
  @section('content')
      <section class="container bg-limena-600 pb-20">
@@ -42,5 +42,5 @@
              </p>
          </div>
      </section>
-
+     @include('partials.anuncio')
  @endsection

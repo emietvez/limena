@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Cabalgatas al pie de la Cordillera de Los Andes y a pocos kilómetros de la reserva natural Laguna del Diamante. Viví la experiencia de cabalgar entre arroyos y montaña." />
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('img/favicon/apple-icon-57x57.png') }}" />
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('img/favicon/apple-icon-60x60.png') }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('img/favicon/apple-icon-72x72.png') }}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('img/favicon/apple-icon-76x76.png') }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('img/favicon/apple-icon-114x114.png') }}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('img/favicon/apple-icon-120x120.png') }}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('img/favicon/apple-icon-144x144.png') }}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('img/favicon/apple-icon-152x152.png') }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('img/favicon/apple-icon-180x180.png') }}" />
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('img/favicon/android-icon-192x192.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('img/favicon/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('img/favicon/favicon-96x96.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/favicon/favicon-16x16.png') }}" />
+   
     <title>Finca Limeña | @yield('title') </title>
     {{-- Scripts --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.3/js/splide.min.js"
@@ -13,6 +29,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     {{-- STYLES --}}
     @vite('resources/css/app.css')
@@ -38,8 +55,8 @@
                 class="font-semibold text-limena-200 fa-brands fa-instagram mt-3"></i>
         </a>
         <a href="https://wa.me/542616155442" class="flex items-center justify-center"><i
-            class="font-semibold text-limena-200 fa-brands fa-whatsapp mt-3"></i>
-    </a>
+                class="font-semibold text-limena-200 fa-brands fa-whatsapp mt-3"></i>
+        </a>
     </div>
     <div id="dropdownLeft" class="hidden z-40 w-28 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
         <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLeftButton">
@@ -59,7 +76,7 @@
         </ul>
     </div>
 
-   
+
 
     {{-- NAVEGADOR --}}
     <nav id="navbar"
@@ -106,26 +123,27 @@
                     </li>
                     <li>
                         <a href="/" id="logo-white" class="md:flex items-center hidden">
-                            <img src="{{ asset('img/brands/logo-white.png') }}" class="h-36 mx-10" alt="Limeña Logo">
+                            <img src="{{ asset('img/brands/logo-white.png') }}" class="h-36 mx-10"
+                                alt="Limeña Logo">
                         </a>
                         <a href="/" id="logo-color" class="items-center hidden">
                             <img src="{{ asset('img/brands/flor.png') }}" class="h-10 mx-10" alt="Limeña Logo">
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('cabalgatas')}}"
+                        <a href="{{ route('cabalgatas') }}"
                             class="items block py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150  md:p-0">
                             Cabalgatas
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('aventura')}}"
+                        <a href="{{ route('aventura') }}"
                             class="items block py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150  md:p-0">
                             Aventura
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('gastronomia')}}"
+                        <a href="{{ route('gastronomia') }}"
                             class="items flex py-2 pl-3 pr-4 md:mx-4 uppercase text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:text-gray-200 hover:text-gray-800 transition-all duration-150 md:p-0">
                             Gastronomía
                         </a>

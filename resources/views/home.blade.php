@@ -1,10 +1,20 @@
- {{-- SLIDE --}}
- <div class="back-home bg-black flex items-center justify-center">
+{{-- SLIDE --}}
+<div class="back-home bg-black flex items-center justify-center">
     <h1 class="text-white text-center text-2xl md:text-5xl font-bold uppercase">Una aventura con alma de campo</h1>
 </div>
 @extends('layouts.app')
+@section('title', 'Inicio')
 
 @section('content')
+    @if (session('success'))
+        <script>
+            Swal.fire({
+                icon: 'success',
+                title: 'Formulario de reserva enviado correctamente',
+                confirmButtonColor: '#BAD1D0',
+            })
+        </script>
+    @endif
     <main class="container bg-limena-600">
         <div class="flex items-center justify-center flex-col py-10">
             <img src="{{ asset('img/brands/flor.png') }}" class="items-center mx-5 h-28 md:h-40" alt="">
@@ -56,7 +66,8 @@
                 </div>
             </div>
             <div class="hidden md:flex md:col-span-3 col-span-2">
-                <img class="rounded-2xl md:w-full md:relative md:right-36" src="{{ asset('img/finca.jpg') }}" alt="">
+                <img class="rounded-2xl md:w-full md:relative md:right-36" src="{{ asset('img/finca.jpg') }}"
+                    alt="">
             </div>
         </div>
 
